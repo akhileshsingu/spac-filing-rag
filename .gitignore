@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ---- Project Data (SPAC Filing Pipeline) ----
+
+# Raw SEC filings
+data/raw_filings/*
+
+# Parsed filings
+data/parsed_filings/*
+
+# Registry outputs
+data/registry/*
+
+# Keep folder structure
+!data/raw_filings/.gitkeep
+!data/parsed_filings/.gitkeep
+!data/registry/.gitkeep
+
+# Vector databases / embeddings
+*.faiss
+*.db
+*.sqlite
+*.sqlite3
+chroma/
+vector_store/
+
+# Logs
+*.log
+
+# Mac OS files
+.DS_Store
