@@ -235,3 +235,5 @@ vector_store/
 
 # Mac OS files
 .DS_Store
+
+data/index/
