@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 from google import genai
 from sentence_transformers import SentenceTransformer
 
+from pathlib import Path
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 FAISS_DIR = BASE_DIR / "data" / "index" / "faiss"
@@ -48,7 +50,7 @@ Text:
 
 
 def main() -> None:
-    load_dotenv()
+    load_dotenv(dotenv_path=Path(".env"))
 
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
