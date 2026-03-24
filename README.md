@@ -1,10 +1,6 @@
 # spac-filing-rag
 Pipeline for automatically ingesting SPAC SEC filings (424B4), extracting structured data, and enabling RAG-based querying of SPAC prospectuses.
 
-# spac-filing-rag
-
-Pipeline for automatically ingesting SPAC SEC filings (424B4), extracting structured data, and enabling RAG-based querying of SPAC prospectuses.
-
 ## Project Goal
 Build a pipeline that:
 1. Reads a SPAC registry
@@ -35,3 +31,12 @@ Build a pipeline that:
 4. Extract structured fields
 5. Chunk and index documents
 6. Build query interface
+
+## Version 1 includes:
+- 424B4 resolver
+- filing downloader
+- HTML parser
+- section-aware chunking
+- local embeddings with FAISS
+- retrieval script
+- Gemini-based answer generation
